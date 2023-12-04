@@ -146,7 +146,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="dashboard-right">
-            <BarChart graphData={[]} />
+            <BarChart graphData={graphData} />
           </div>
         </div>
         <div className="mobile-container">
@@ -174,7 +174,7 @@ const Dashboard = () => {
       <Crypto simplified />
       <div className="mobile-container web-container">
         <div className="dash-head-container">
-          <h2 className="globe-head-text">Top 5 Trending Crypto News</h2>
+          <h2 className="globe-head-text">Top 6 Trending Crypto News</h2>
           <h3 className="show-more-text">
             <Link to="/news">show more</Link>
           </h3>

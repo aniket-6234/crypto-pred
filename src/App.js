@@ -7,6 +7,7 @@ import Crypto from "./components/Crypto";
 import CryptoDetail from "./components/CryptoDetail";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Prediction from "./machineLearning/Prediction";
+import BitcoinPrediction from "./components/BitcoinPrediction";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Dashboard />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/crypto" element={<Crypto />} />
           <Route path="/news" element={<News />} />

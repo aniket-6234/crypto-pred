@@ -12,6 +12,7 @@ import {
 } from "../redux/services/cryptoApi";
 import CryptoCard from "./CryptoCard";
 import { scrollToTopAfterPageRender } from "../utils/scrollToTop";
+import axios from "axios";
 
 const Crypto = ({ simplified }) => {
   const count = simplified ? 8 : 100;
@@ -37,7 +38,7 @@ const Crypto = ({ simplified }) => {
 
   return (
     <div
-      style={ simplified ? {} : { height: "100vh" }}
+      style={simplified ? {} : { height: "100vh" }}
       className="px-4 lg:px-24 bg-black overflow-auto"
     >
       {!simplified && (

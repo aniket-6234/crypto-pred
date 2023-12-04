@@ -927,6 +927,48 @@
   flex-direction: column;
 }
 
+.predict-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  color: white;
+}
+.pre-option-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pred-select {
+  margin-left: 10px;
+  width: 220px;
+  outline: none;
+  height: 32px;
+  border-radius: 5px;
+  background-color: rgb(32, 32, 32);
+}
+
+.pred-btn {
+  width: 120px;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #422cc3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pred-graph {
+  height: 80vh;
+  margin-top: 50px;
+}
+.pred-loader {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) and (max-width: 767px) {
   .nav-item {
     display: none;
